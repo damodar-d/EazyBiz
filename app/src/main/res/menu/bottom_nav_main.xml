@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/bottom_nav_accepted"
+        android:icon="@drawable/ic_accepted_light"
+        android:title="@string/accepted_bottom_nav"/>
+
+    <item android:id="@+id/bottom_nav_pending"
+        android:icon="@drawable/ic_pending_light"
+        android:title="@string/pending_bottom_nav"/>
+
+
+
+</menu>

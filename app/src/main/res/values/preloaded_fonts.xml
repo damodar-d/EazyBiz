@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_medium</item>
+        <item>@font/amaranth_italic</item>
+        <item>@font/andika</item>
+        <item>@font/armata</item>
+        <item>@font/baloo_tamma</item>
+        <item>@font/basic</item>
+        <item>@font/biryani_extralight</item>
+        <item>@font/boogaloo</item>
+        <item>@font/capriola</item>
+        <item>@font/copse</item>
+        <item>@font/crete_round</item>
+        <item>@font/lato</item>
+        <item>@font/merriweather</item>
+    </array>
+</resources>

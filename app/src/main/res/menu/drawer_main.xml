@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home_light"
+        android:id="@+id/menu_home"/>
+    <item android:title="@string/at_our_store">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_toys"
+                    android:icon="@drawable/ic_toys_light"
+                    android:title="@string/toys" />
+
+                <item
+                    android:id="@+id/menu_gifts"
+                    android:icon="@drawable/ic_gifts_light"
+                    android:title="@string/gifts" />
+
+                <item
+                    android:id="@+id/menu_luxury"
+                    android:icon="@drawable/ic_toys_light"
+                    android:title="@string/luxury" />
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="@string/business">
+        <menu>
+
+
+            <item
+                android:id="@+id/menu_employees"
+                android:icon="@drawable/ic_employees_light"
+                android:title="@string/employees_desk" />
+
+
+            <item
+                android:id="@+id/menu_providers"
+                android:icon="@drawable/ic_providers_light"
+                android:title="Providers" />
+
+
+            <item
+                android:id="@+id/menu_recent_purchases"
+                android:icon="@drawable/ic_recent_purchases_light"
+                android:title="Recent Purchases" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/contact_us">
+        <menu>
+
+            <item
+                android:id="@+id/menu_about_us"
+                android:icon="@drawable/ic_contact_us_light"
+                android:title="@string/contact_us" />
+
+            <item
+                android:id="@+id/menu_data_privacy"
+                android:icon="@drawable/ic_data_privacy_light"
+                android:title="@string/data_privacy" />
+        </menu>
+    </item>
+    <item android:title="Sign Out"
+        android:icon="@drawable/ic_logout_light"
+        android:id="@+id/menu_sign_out"/>
+</menu>
