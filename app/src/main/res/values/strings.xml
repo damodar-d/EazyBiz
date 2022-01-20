@@ -25,4 +25,7 @@
     <string name="hint_shopName">Shop Name</string>
     <string name="hint_shop_name">Shop Name</string>
     <string name="title_activity_employee">EmployeeActivity</string>
+    <string name="mode_of_transaction">\"Mode of Transaction: \"</string>
+    <string name="paid_amount">\"Amount Paid: \"</string>
+    <string name="date_delivered">\"Date Delivered: \"</string>
 </resources>

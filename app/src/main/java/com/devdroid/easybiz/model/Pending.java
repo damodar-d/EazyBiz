@@ -1,14 +1,15 @@
 package com.devdroid.easybiz.model;
 
-public class Accepted {
+public class Pending {
 
     private String name;
-    private String paid_amount;
+    private String amount_to_paid;
     private String mode_of_transaction;
     private String image_url;
     private String date_of_delivery;
 
-    public Accepted()
+
+    public Pending()
     {
 
     }
@@ -17,17 +18,17 @@ public class Accepted {
         return name;
     }
 
-    public Accepted setName(String name) {
+    public Pending setName(String name) {
         this.name = name;
         return this;
     }
 
-    public String getPaid_amount() {
-        return paid_amount;
+    public String getAmount_to_paid() {
+        return amount_to_paid;
     }
 
-    public Accepted setPaid_amount(String paid_amount) {
-        this.paid_amount = paid_amount;
+    public Pending setAmount_to_paid(String amount_to_paid) {
+        this.amount_to_paid = amount_to_paid;
         return this;
     }
 
@@ -35,7 +36,7 @@ public class Accepted {
         return mode_of_transaction;
     }
 
-    public Accepted setMode_of_transaction(String mode_of_transaction) {
+    public Pending setMode_of_transaction(String mode_of_transaction) {
         this.mode_of_transaction = mode_of_transaction;
         return this;
     }
@@ -44,7 +45,7 @@ public class Accepted {
         return image_url;
     }
 
-    public Accepted setImage_url(String image_url) {
+    public Pending setImage_url(String image_url) {
         this.image_url = image_url;
         return this;
     }
@@ -53,7 +54,7 @@ public class Accepted {
         return date_of_delivery;
     }
 
-    public Accepted setDate_of_delivery(String date_of_delivery) {
+    public Pending setDate_of_delivery(String date_of_delivery) {
         this.date_of_delivery = date_of_delivery;
         return this;
     }

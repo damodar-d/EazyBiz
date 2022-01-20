@@ -35,17 +35,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.465">
+
                 <ImageView
-                    android:id="@+id/firmImageView"
+                    android:id="@+id/pendingDistributorImage"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/item_background"
+                    android:scaleType="centerInside"
                     android:src="@drawable/satara_distributors"
                     tools:layout_editor_absoluteX="11dp"
                     tools:layout_editor_absoluteY="65dp" />
             </androidx.cardview.widget.CardView>
 
             <TextView
+                android:id="@+id/acceptedDistributorName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
@@ -63,14 +66,16 @@
             android:gravity="start|center_vertical">
 
             <TextView
+                android:id="@+id/acceptedDateOfDelivery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/andika"
-                android:text="Date of Delivery"
+                android:text="Date Delivered:"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/acceptedPaidAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -79,8 +84,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/modeOfTransaction"
 
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/andika"
