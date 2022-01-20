@@ -12,9 +12,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <include layout="@layout/toolbar_activity_luxury"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/luxury_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
     </LinearLayout>
 
 
