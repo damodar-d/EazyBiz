@@ -19,8 +19,10 @@ import com.devdroid.easybiz.drawerActivities.LuxuryActivity;
 import com.devdroid.easybiz.drawerActivities.ProvidersActivity;
 import com.devdroid.easybiz.drawerActivities.RecentPurchasesActivity;
 import com.devdroid.easybiz.drawerActivities.ToysActivity;
+
 import com.devdroid.easybiz.recyclerview.HomeAcceptedRecyclerViewAdapter;
 import com.devdroid.easybiz.recyclerview.HomePendingRecyclerViewAdapter;
+import com.devdroid.easybiz.recyclerview.ToysListAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
@@ -41,12 +43,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle toggle;
     AlertDialog.Builder cancelAlertDialog,signOutDialog;
     BottomNavigationView bottomNavigationView;
-    DatabaseReference userEmailsNode,acceptedNode,pendingNode,registeredUsersNode;
+    DatabaseReference userEmailsNode,acceptedNode,pendingNode,registeredUsersNode,toysNode;
     DrawerLayout drawerLayout;
     FirebaseAuth auth;
     FirebaseDatabase database;
@@ -68,18 +74,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     RecyclerView mainActivityRecyclerView;
     TextView userEmailID,userShopName;
     Toolbar toolbar;
+    ToysListAdapter toysListAdapter;
     public static String url="https://sites.google.com/view/easybiz-privacy-policy/home";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initViews();
+        Log.i("Thread Name: ", "run: "+Thread.currentThread().getName());
         database=FirebaseDatabase.getInstance();
         registeredUsersNode= database.getReference("Registered Users");
         acceptedNode=database.getReference("Accepted");
         pendingNode=database.getReference("Pending");
+        toysNode=database.getReference("Toys");
         auth= FirebaseAuth.getInstance();
-        initViews();
+
+        getReferences();
         setAdapters();
         getManagers();
         setDrawerHeader();
@@ -134,7 +146,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
-
     }
 
     private void setDrawerHeader() {
@@ -329,4 +340,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .setMessage("Are you Sure you want to Sign Out ?");
     }
 
+
+    private void getReferences()
+    {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }).start();
+    }
 }

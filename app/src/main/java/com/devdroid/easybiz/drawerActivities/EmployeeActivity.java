@@ -12,7 +12,7 @@ import com.devdroid.easybiz.MainActivity;
 import com.devdroid.easybiz.R;
 import com.devdroid.easybiz.authentication.StartActivity;
 import com.devdroid.easybiz.codes.RequestCodes;
-import com.devdroid.easybiz.data_model.Employee;
+import com.devdroid.easybiz.model.Employee;
 import com.devdroid.easybiz.databaseParameters.FirebaseNodes;
 import com.devdroid.easybiz.recyclerview.EmployeeRecyclerViewAdapter;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
