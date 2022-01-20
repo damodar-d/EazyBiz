@@ -1,6 +1,4 @@
-package com.devdroid.easybiz.data_model;
-
-import com.squareup.picasso.Picasso;
+package com.devdroid.easybiz.model;
 
 public class Employee {
 
